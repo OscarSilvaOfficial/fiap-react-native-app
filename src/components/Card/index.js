@@ -1,12 +1,15 @@
-import { View, Text } from 'react-native';
-import estilos from './styles';
+import { View } from 'react-native';
+import { Card as CardStyle, Container } from './styles'
 
-export default function Produto({ nome, preco }) {
-
+export default function Card({ nome, preco }) {
   return (
-    <View style={estilos.container}>
-      <Text style={estilos.texto}>{nome}</Text>
-      <Text style={estilos.texto}>R$ {preco}</Text>
+    <View>
+      <CardStyle>
+        <Container>
+          <h4><b>John Doe</b></h4> 
+          <p>Architect & Engineer</p> 
+        </Container>
+      </CardStyle>
     </View>
   );
 }

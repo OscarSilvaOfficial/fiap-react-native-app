@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import Header from '../../components/Header';
-import Produto from '../../components/Products';
+import Card from '../../components/Card';
 import styles from './styles';
 
 export default function Home({ navigation }) {
@@ -10,9 +10,9 @@ export default function Home({ navigation }) {
     <View style={styles.container}>
       <Header navigation={navigation} />
 
-      <Produto nome="Tênis" preco="200,00" />
-      <Produto nome="Camisa" preco="100,00" />
-      <Produto nome="Suplementos" preco="150,00" />
+      <Card nome="Tênis" preco="200,00" />
+      <Card nome="Camisa" preco="100,00" />
+      <Card nome="Suplementos" preco="150,00" />
      </View>
   );
 }
